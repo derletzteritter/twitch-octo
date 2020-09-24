@@ -1,0 +1,23 @@
+@media (min-width: 60rem) {
+  .home-hero {
+    text-align: center;
+    background: #1c1c1c;
+    padding: 10em 0;
+    height: 100vh;
+  }
+
+  .home-title {
+    font-size: 5.0rem;
+    color: #fff;
+  }
+
+  .home-title span {
+    color: #9147ff;
+  }
+
+  .home-desc {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+}
