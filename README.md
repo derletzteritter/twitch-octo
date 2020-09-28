@@ -10,5 +10,5 @@ With Twitch Octo you can look up the stats you need in a second.
 
 
 # Motivation
-## I always wanted to create a platform for this type of content and now I finally have the ability to do so, and with great people on board, things get easier.
+## Its cool
 
