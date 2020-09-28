@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import api from '../../../api/Api';
 import './TopGames.css';
+import { useGames } from './hooks/useGames';
 
 export const TopGames = () => {
-  const [games, setGames] = useState([]);
+  const { gamesList, setGamesList } = useGames();
   
   useEffect(() => {
     const fetchTopGames = async () => {
@@ -14,16 +15,16 @@ export const TopGames = () => {
         let newURL = game.box_art_url.replace('{width}', 200).replace('{height}', 280)
         game.box_art_url = newURL
       })
-      setGames(result.data.data)
+      setGamesList(result.data.data)
     }
 
     fetchTopGames();
-  }, games)
+  }, gamesList)
 
   return (
     <div className="games-hero">
       <div className="games-list">
-        {games.map(g => (
+        {gamesList.map(g => (
           <div className="game-card" key={g.id}>
             <img src={g.box_art_url} />
             <div className="game-card-info" id="card-info">
