@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import api from '../../../api/Api';
-import './TopGames.css';
+import './Games.css';
 import { useGames } from './hooks/useGames';
 
-export const TopGames = () => {
+export const Games = () => {
   const { gamesList, setGamesList } = useGames();
   
   useEffect(() => {
@@ -23,6 +23,13 @@ export const TopGames = () => {
 
   return (
     <div className="games-hero">
+      <h1 className="top-games-title">Top Games</h1>
+      <div>
+        <input 
+          placeholder="Search games..."
+        />
+        <button></button>
+      </div>
       <div className="games-list">
         {gamesList.map(g => (
           <div className="game-card" key={g.id}>

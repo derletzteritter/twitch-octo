@@ -1,0 +1,7 @@
+@media (min-width: 60rem) {
+  .streamers-hero {
+    padding: 10em 0;
+    background: #1c1c1c;
+    height: 100vh;
+  }
+}

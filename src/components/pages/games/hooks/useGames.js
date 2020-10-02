@@ -1,8 +1,6 @@
 import React from 'react';
 import { atom, useRecoilState } from 'recoil';
 
-import api from '../../../../api/Api';
-
 export const gamesListState = atom({
   key: 'topGames',
   default: []

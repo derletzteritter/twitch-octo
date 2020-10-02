@@ -7,7 +7,8 @@ import { Footer } from '../components/footer/Footer';
 
 // Pages
 import { Home } from '../components/pages/home/Home'
-import { TopGames } from '../components/pages/top-games/TopGames';
+import { Games } from '../components/pages/games/Games';
+import { Streamers } from '../components/pages/streamers/Streamers';
  
 
 export const Routes = () => {
@@ -17,7 +18,10 @@ export const Routes = () => {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/top-games" component={TopGames} />
+        <Route path="/games" component={Games} />
+        <Route path="/streamers" component={Streamers} />
+
+        
       </Switch>
       </div>
     </Router>
