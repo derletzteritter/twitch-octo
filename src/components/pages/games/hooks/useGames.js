@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { atom, useRecoilState } from 'recoil';
 
 export const gamesListState = atom({

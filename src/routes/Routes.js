@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components
 import { Header } from '../components/header/Header';
-import { Footer } from '../components/footer/Footer';
 
 // Pages
 import { Home } from '../components/pages/home/Home'
@@ -20,8 +19,6 @@ export const Routes = () => {
         <Route path="/" exact component={Home} />
         <Route path="/games" component={Games} />
         <Route path="/streamers" component={Streamers} />
-
-        
       </Switch>
       </div>
     </Router>

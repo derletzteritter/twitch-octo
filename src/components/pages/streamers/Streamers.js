@@ -1,5 +1,4 @@
 import React from 'react'
-import { useStreamers } from './hooks/useStreamers';
 
 import './Streamers.css';
 

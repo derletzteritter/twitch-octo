@@ -11,7 +11,7 @@ export const Header = () => {
       <nav>
         <ul>
           <li><NavLink exact to="/" activeClassName="active-header">Home</NavLink></li>
-          <li><NavLink activeClassName="active-header" to="/games" activeClassName="active-header">Games</NavLink></li>
+          <li><NavLink activeClassName="active-header" to="/games">Games</NavLink></li>
           <li><NavLink activeClassName="active-header" to="/streamers">Streamers</NavLink></li>
           <li>Stats</li>
           <li><input 
